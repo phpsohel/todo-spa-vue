@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('post');
 // });
 Route::get('{any?}', function(){
-    return view('post');
+    return view('task');
 })->where('any', '.*');

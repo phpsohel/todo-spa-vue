@@ -5,6 +5,7 @@ import * as  VueRouter from 'vue-router'
 //Import File
 import HomeComponent from './components/HomeComponent.vue'
 import AboutComponent from './components/AboutComponent.vue'
+import TaskComponent from './components/TaskComponent.vue'
 
 const routes = [
     {
@@ -14,6 +15,10 @@ const routes = [
     {
         path: '/about',
         component:AboutComponent
+    },
+    {
+        path: '/task',
+        component:TaskComponent
     }
 ]
 const router = VueRouter.createRouter({
