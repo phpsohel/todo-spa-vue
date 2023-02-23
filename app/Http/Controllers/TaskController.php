@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Task;
 class TaskController extends Controller
 {
     /**
@@ -34,7 +34,14 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'ok';
+         Task::create([
+            'title' =>$request->title,
+            'date' =>$request->date,
+            'time' =>$request->time,
+            'title' =>$request->detail,
+        ]);
+        return response()->json('Tasked Stored Successfully!');
     }
 
     /**

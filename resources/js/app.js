@@ -29,6 +29,7 @@ const router = VueRouter.createRouter({
 
 
 const app = createApp({})
+window.url = "/ganja/"
 app.use(router)
 
 app.component('home-component',HomeComponent)
